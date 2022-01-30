@@ -5,6 +5,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <!--Хедер-->
     <header class="page-header">
      <nav class="navigation">
       <a class="navigation-logo" href="#">
@@ -38,18 +39,17 @@
       <a class="button button-all" href="catalog.html">Хочу сюда!</a>
      </nav>
     </header>
-
+    <!--Обложка-->
     <main class="main-index">
       <h1 class="visually-hidden">Cедона</h1>
       <img class="page-index-logo" src="" alt="Добро пожаловать в Седону">
-
+       <!--Преимущества-->
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <div>
           <b class="advantages-title">Cедона — небольшой городок в Аризоне, заслуживающий большего!</b>
-        <p class="advantages-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <p class="advantages-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
-
         <!--№1 с изображением-->
         <div class="advantages-item advantages-item-number">
           <h3 class="advantages-title">Настоящий
@@ -110,10 +110,29 @@
           </li>
         </ol>
       </section>
-
+      <!--Переход к поиску-->
+      <section class="search-hotel">
+        <h2 class="search-hotel-title">Заинтересовались?</h2>
+        <p class="search-hotel-description">Укажите предполагаемые даты поездки,
+          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="button button-all" href="catalog.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
+      </section>
+      <!--Подписка на рассылку-->
+      <section class="newsletter">
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
+        <p class="newsletter-description">Только полезная информация и никакого спама,
+          честное бойскаутское!</p>
+          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label for="newsletter-email">Email</label>
+            <input class="field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
+            <button class="button newsletter-button" type="submit">Подписаться</button>
+          </form>
+      </section>
     </main>
 
+    <footer>
 
+    </footer>
 
 
     <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
