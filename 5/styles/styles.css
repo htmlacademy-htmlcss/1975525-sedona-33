@@ -1,0 +1,263 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+/* Pages */
+.page-header {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.navigation-link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-index {
+  color: #000000;
+  background-color: #FFFFFF;
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% 485px;
+  background-repeat: no-repeat;
+}
+/* advantages */
+.advantages {
+  text-align: center;
+}
+
+.advantages-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  line-height: 36px;
+}
+
+.advantages-item-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-item-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages-item-number-blue {
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
+
+/* search hotel */
+.search-hotel {
+  text-align: center;
+}
+
+.search-hotel-title{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+/* newsletter  */
+.newsletter {
+  text-align: center;
+}
+
+/* catalog */
+.catalog-filter {
+  color: #FFFFFF;
+  background-color: #756257;
+  background-size: 100%;
+  /*background-image: url("../images/catalog-background.jpg");*/
+  background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+/* здесь не показывалось фоновое изображение целиком, если не указать высоту этого блока, почему так? */
+.newsletter-index {
+  color: #FFFFFF;
+  background-color: #756257;
+  background-size: 100%;
+  background-image: url("../images/newsletter-background.jpg");
+  background-repeat: no-repeat;
+  height: 411px;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+}
+
+.newsletter-inner {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.catalog-filter-item {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.search-results-title {
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+}
+
+/* hotels */
+
+.hotel-card-link {
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+  text-decoration: none;
+}
+/* Может быть, вообще стоит объединить hotel-card-type и hotel-card-price, hotel-rating-text и item-rating? Не выделять в них мелкие элементы*/
+.hotel-card-type,
+.hotel-card-price {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.hotel-rating-text {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.item-rating {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* pagination */
+.pagination-link {
+  color: #ffffff;
+  background-color: #83B3D3;
+  text-decoration: none;
+  font-size: 20;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}
+
+/* contacs */
+.footer-contacts-phone {
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration-line: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+/* Buttons */
+
+
+
+.button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff
+}
+
+.button-blue {
+  background-color: #83B3D3;
+}
+
+.button-orange {
+  background-color: #756257;
+}
+
+.small-button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.small-button-orange {
+  background-color: #756257;
+}
+
+.small-button-blue {
+  background-color: #83B3D3;
+}
+
+.small-button-added {
+  background-color: #7DB54F;
+
+}
+
+.button-reset {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.button-catalog {
+  color: #ffffff;
+  background-color: #756257;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
