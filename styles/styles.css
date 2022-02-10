@@ -47,7 +47,7 @@ body {
   background-size: 100% 485px;
   background-repeat: no-repeat;
 }
-
+/* advantages */
 .advantages {
   text-align: center;
 }
@@ -79,7 +79,59 @@ body {
   background-color: #83B3D3;
 }
 
+/* search hotel */
+.search-hotel {
+  text-align: center;
+}
+
+.search-hotel-title{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+/* newsletter здесь не показывалось фоновое изображение целиком, если не указать высоту этого блока, почему так? */
+.newsletter {
+  text-align: center;
+}
+
+.newsletter-index {
+  color: #FFFFFF;
+  background-color: #756257;
+  background-size: 100%;
+  background-image: url("../images/newsletter-background.jpg");
+  background-repeat: no-repeat;
+  height: 411px;
+}
+
+.newsletter-inner {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+/* contacs */
+.footer-contacts-phone {
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration-line: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+}
+
 /* Buttons */
+
+.button-large {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff
+}
+
 .button {
   font-family: inherit;
   font-size: 20px;
@@ -88,7 +140,7 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #ffffff
 }
 
 .button-blue {
@@ -102,6 +154,11 @@ body {
 .small-button {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .small-button-orange {
@@ -122,3 +179,12 @@ body {
   font-size: 18px;
   line-height: 23px;
 }
+
+.button-catalog {
+  color: #ffffff;
+  background-color: #756257;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
