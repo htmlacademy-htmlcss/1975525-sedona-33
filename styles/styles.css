@@ -14,7 +14,14 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -26,6 +33,21 @@ body {
 .page-header {
   color: #000000;
   background-color: #FFFFFF;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation-list {
+  width: 440px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 305px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -40,6 +62,10 @@ body {
   text-transform: uppercase;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index {
   color: #000000;
   background-color: #FFFFFF;
@@ -47,9 +73,25 @@ body {
   background-size: 100% 485px;
   background-repeat: no-repeat;
 }
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.page-index-logo {
+  display: block;
+  margin: 0 auto;
+}
+
 /* advantages */
+
 .advantages {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-title {
@@ -57,10 +99,18 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  width: 720px;
 }
 
 .advantages-description {
   line-height: 36px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 720px;
 }
 
 .advantages-item-title {
@@ -72,11 +122,35 @@ body {
 .advantages-item-description {
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
 }
 
-.advantages-item-number-blue {
+.advantages-item {
+  width: 400px;
+  padding: 0 75px;
+}
+
+.advantages-item-blue {
   color: #FFFFFF;
   background-color: #83B3D3;
+  width: 400px;
+  padding: 0 90px;
+}
+
+.item-without-img {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.advantages-item-light-blue {
+  background: #83B3D31F;
+}
+
+.advantages-item-medium-blue {
+  background: #83B3D333;
 }
 
 /* search hotel */
@@ -84,10 +158,11 @@ body {
   text-align: center;
 }
 
-.search-hotel-title{
+.search-hotel-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
+
 }
 
 /* newsletter  */
@@ -110,7 +185,7 @@ body {
   font-weight: 700;
 }
 
-/* здесь не показывалось фоновое изображение целиком, если не указать высоту этого блока, почему так? */
+
 .newsletter-index {
   color: #FFFFFF;
   background-color: #756257;
@@ -152,15 +227,40 @@ body {
   font-weight: 700;
 }
 
+.catalog-hotels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-header {
+display: block;
+}
+
 /* hotels */
+
+.hotel-list {
+  width: 1056px;
+  margin: 0 72px;
+  padding: 0;
+}
+
+.search-results-sorting {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 72px;
+}
+
+.search-results {
+  width: 338px;
+}
 
 .hotel-card-link {
   font-size: 24px;
   line-height: 31px;
-  color: #000000;
+  color: #5f5f5f;
   text-decoration: none;
 }
-/* Может быть, вообще стоит объединить hotel-card-type и hotel-card-price, hotel-rating-text и item-rating? Не выделять в них мелкие элементы*/
+
 .hotel-card-type,
 .hotel-card-price {
   font-size: 18px;
@@ -192,13 +292,38 @@ body {
   background-color: #F2F2F2;
 }
 
-/* contacs */
+/*footer*/
 .footer-contacts-phone {
-  font-size: 24px;
-  line-height: 29px;
+  display: block;
+  margin: 0 auto;
+  font-size: 40px;
+  line-height: 40px;
   text-decoration-line: none;
   text-transform: uppercase;
   color: #000000;
+  text-align: center;
+}
+
+.page-footer-container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.footer-social {
+  width: 107px;
+  margin-right: 61px;
+  margin-left: 72px;
+}
+
+.footer-contacts {
+  width: 720px;
+}
+
+.footer-logo {
+  width: 115px;
+  margin-right: 53px;
+  margin-left: 72px;
 }
 
 /* Buttons */
@@ -254,6 +379,7 @@ body {
 }
 
 .button-catalog {
+  font-size: 20px;
   color: #ffffff;
   background-color: #756257;
   text-decoration: none;
