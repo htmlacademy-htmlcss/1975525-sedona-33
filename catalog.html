@@ -53,7 +53,7 @@
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="visually-hidden breadcrumbs-main" href="index.html">Главная</a>
+              <a class="<!--visually-hidden--> breadcrumbs-main" href="index.html">Главная</a>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
@@ -157,6 +157,10 @@
           <span class="visually-hidden">Показать список</span>
         </a>
       </section>
+
+      <!--Карточки отелей-->
+
+
       <ul class="hotel-list">
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
@@ -227,38 +231,44 @@
         </li>
       </ul>
 
-      <button class="button button-blue button-show-more" type="button">Загрузить ещё</button>
+      <div class="button-show-more">
+        <button class="button button-blue" type="button">Загрузить ещё</button>
+      </div>
 
       <section class="pagination">
-        <ul class="pagination-list">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">
-              <span class="visually-hidden">Страницы 5-9</span>
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ul>
-        <p>Гостиниц на странице:</p>
-        <select class="select-hotels-on-page">
-          <option value="value-1">1</option>
-          <option value="value-2">2</option>
-          <option value="value-3">3</option>
-          <option value="value-4">4</option>
-        </select>
+        <div class="pagination-container">
+          <ul class="pagination-list">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">
+                <span class="visually-hidden">Страницы 5-9</span>
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
+        </div>
+        <div class="show-more">
+          <p class="hotels-on-page">Гостиниц на странице:</p>
+          <select class="select-hotels-on-page">
+            <option value="value-1">1</option>
+            <option value="value-2">2</option>
+            <option value="value-3">3</option>
+            <option value="value-4">4</option>
+          </select>
+        </div>
       </section>
 
     </main>
