@@ -37,20 +37,43 @@ body {
 
 .navigation {
   display: flex;
-}
-
-.navigation-list {
-  width: 440px;
-  margin: 0;
+  width: 1060px;
+  margin: 0 auto;
   padding: 0;
 }
 
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 440px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-logo {
+  display: block;
+  margin: 0;
+  margin-right: 30px;
+  padding: 0;
+}
 .navigation-user {
   max-width: 305px;
   margin-left: auto;
 }
 
+.navigation-user .navigation-link {
+  min-width: 18px;
+  min-height: 20px;
+}
+
+.button-catalog {
+  display: block;
+}
+
 .navigation-link {
+  display: block;
+  padding: 20px 17px;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
@@ -64,6 +87,7 @@ body {
 
 .main-container {
   flex-grow: 1;
+  padding-top: 51px;
 }
 
 .main-index {
@@ -82,30 +106,40 @@ body {
 .page-index-logo {
   display: block;
   margin: 0 auto;
+  margin-bottom: 145px;
 }
+
+.promo {
+  margin-bottom: 80px;
+}
+
 
 /* advantages */
 
 .advantages {
   display: flex;
   justify-content: space-between;
+  max-height: 384px;
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
 .advantages-title {
+  display: block;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   margin: auto;
+  margin-bottom: 31px;
   padding: 0;
   width: 720px;
 }
 
 .advantages-description {
+  display: block;
   line-height: 36px;
   text-align: center;
   margin: 0 auto;
@@ -127,14 +161,21 @@ body {
 
 .advantages-item {
   width: 400px;
-  padding: 0 75px;
+  max-height: 384px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 
 .advantages-item-blue {
   color: #FFFFFF;
   background-color: #83B3D3;
-  width: 400px;
-  padding: 0 90px;
+  /*width: 400px;*/
+  padding-top: 97px;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-bottom: 87px;
 }
 
 .item-without-img {
@@ -153,21 +194,57 @@ body {
   background: #83B3D333;
 }
 
+.item-with-logo {
+  padding-top: 184px;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 79px;
+}
+
+.advantages-with-number {
+  padding-top: 98px;
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-bottom: 108px;
+}
+
 /* search hotel */
-.search-hotel {
+.search-hotel,
+.newsletter {
+  box-sizing: border-box;
   text-align: center;
+  margin: 0;
+  padding-top: 92px;
+  padding-bottom: 93px;
 }
 
-.search-hotel-title {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-
+.search-hotel-description {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 56px;
 }
+
 
 /* newsletter  */
 .newsletter {
   text-align: center;
+}
+
+.search-hotel-title,
+.newsletter-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 0px;
+  padding-bottom: 29px;
+  margin: 0;
+}
+
+.newsletter-description {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 46px;
 }
 
 /* catalog */
@@ -175,7 +252,7 @@ body {
   color: #FFFFFF;
   background-color: #756257;
   background-size: 100%;
-  /*background-image: url("../images/catalog-background.jpg");*/
+  background-image: url("../images/catalog-background.jpg");
   background-repeat: no-repeat;
 }
 
@@ -308,22 +385,61 @@ display: block;
   display: flex;
   margin: 0 auto;
   flex-direction: row;
+  padding: 40px 0;
 }
 
 .footer-social {
-  width: 107px;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 53px;
+  width: 240px;
   margin-right: 61px;
   margin-left: 72px;
+  padding: 0;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 107px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-social-item {
+  width: 18px;
+  height: 18px;
+  margin-right: 29px;
+}
+
+.footer-social-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .footer-contacts {
+  margin-top: 0;
+  margin-bottom: 40px;
   width: 720px;
 }
 
 .footer-logo {
+  margin-top: 0;
+  margin-bottom: 45px;
   width: 115px;
   margin-right: 53px;
   margin-left: 72px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Buttons */
