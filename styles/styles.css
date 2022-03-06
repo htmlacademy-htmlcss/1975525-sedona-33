@@ -90,6 +90,11 @@ body {
   padding-top: 51px;
 }
 
+.main-inner {
+  padding: 0;
+  margin: 0;
+}
+
 .main-index {
   color: #000000;
   background-color: #FFFFFF;
