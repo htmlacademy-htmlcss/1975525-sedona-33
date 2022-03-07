@@ -8,44 +8,44 @@
 </head>
 
 <body>
+
+  <!--Хедер-->
+  <header class="page-header">
+    <nav class="navigation">
+      <a class="navigation-logo" href="index.html">
+        <img class="page-header-logo" src="images/logo-header.png" width="139" height="70"
+          alt="Логотип сайта города Седона">
+      </a>
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О Седоне</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">
+            <span class="visually-hidden">Избранное</span>
+          </a>
+        </li>
+        <li>
+          <a class="small-button button-catalog navigation-link" href="catalog.html">Хочу сюда!</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <div class="page-container">
-    <!--Хедер-->
-    <header class="page-header">
-      <nav class="navigation">
-        <a class="navigation-logo navigation-list" href="index.html">
-          <img class="page-header-logo" src="images/logo-header.png" width="139" height="70"
-            alt="Логотип сайта города Седона">
-        </a>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Избранное</span>
-            </a>
-          </li>
-          <li>
-            <a class="button small-button small-button-orange" href="catalog.html">Хочу сюда!</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
     <main class="main-container main-inner">
       <!--Блок с фильтрами-->
       <div class="catalog-filter">
@@ -53,7 +53,7 @@
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="visually-hidden breadcrumbs-main" href="index.html">Главная</a>
+              <a class="<!--visually-hidden--> breadcrumbs-main" href="index.html">Главная</a>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link">Гостиницы</a>
@@ -157,6 +157,10 @@
           <span class="visually-hidden">Показать список</span>
         </a>
       </section>
+
+      <!--Карточки отелей-->
+
+
       <ul class="hotel-list">
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
@@ -227,44 +231,50 @@
         </li>
       </ul>
 
-      <button class="button button-blue button-show-more" type="button">Загрузить ещё</button>
+      <div class="button-show-more">
+        <button class="button button-blue" type="button">Загрузить ещё</button>
+      </div>
 
       <section class="pagination">
-        <ul class="pagination-list">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">
-              <span class="visually-hidden">Страницы 5-9</span>
-            </a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ul>
-        <p>Гостиниц на странице:</p>
-        <select class="select-hotels-on-page">
-          <option value="value-1">1</option>
-          <option value="value-2">2</option>
-          <option value="value-3">3</option>
-          <option value="value-4">4</option>
-        </select>
+        <div class="pagination-container">
+          <ul class="pagination-list">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">
+                <span class="visually-hidden">Страницы 5-9</span>
+              </a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
+        </div>
+        <div class="show-more">
+          <p class="hotels-on-page">Гостиниц на странице:</p>
+          <select class="select-hotels-on-page">
+            <option value="value-1">1</option>
+            <option value="value-2">2</option>
+            <option value="value-3">3</option>
+            <option value="value-4">4</option>
+          </select>
+        </div>
       </section>
 
     </main>
     <!--Подписка на рассылку-->
     <section class="newsletter newsletter-inner">
-      <h2 class="visually-hidden">Подписка на рассылку</h2>
+      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
       <p class="newsletter-description">Только полезная информация и никакого спама,
         честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
