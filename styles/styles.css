@@ -37,9 +37,8 @@ body {
 
 .navigation {
   display: flex;
-  width: 1060px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 70px 0 70px;
 }
 
 .navigation-list {
@@ -64,13 +63,12 @@ body {
   margin-right: 30px;
   padding: 0;
 }
+
 .navigation-user {
   max-width: 305px;
   margin-left: auto;
   justify-content: end;
 }
-
-
 
 .navigation-user .navigation-link {
   min-width: 18px;
@@ -92,11 +90,15 @@ body {
   text-transform: uppercase;
 }
 
+.navigation-link-current {
+  padding-left: 0;
+}
+
 .navigation-link-current::before {
   position: absolute;
   right: 17px;
   bottom: 0px;
-  left: 17px;
+  left: 0px;
   height: 4px;
   background-color: #756257;
   content: "";
@@ -161,6 +163,7 @@ body {
 .page-container {
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 -5px 9px 3px #dbdbdb;
 }
 
 .page-index-logo {
