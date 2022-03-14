@@ -121,11 +121,6 @@ body {
   border-radius: 50%;
 }
 
-.navigation-in-favorites:active {
-  color: #7DB550;
-}
-
-
 .navigation-link:hover {
   color: #756257;
 }
@@ -140,6 +135,10 @@ body {
 
 .navigation-icon:active {
   fill: #7562574D;
+}
+
+.navigation-icon:active .navigation-in-favorites {
+  color: #7DB550;
 }
 
 .main-container {
