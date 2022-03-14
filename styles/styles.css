@@ -261,6 +261,26 @@ body {
   padding-bottom: 79px;
 }
 
+.item-with-logo:nth-child(1) {
+  background-image: url(../images/houses.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 116px;
+}
+
+.item-with-logo:nth-child(2) {
+  background-image: url(../images/food.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 116px;
+}
+
+.item-with-logo:nth-child(3) {
+  background-image: url(../images/souvenirs.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 116px;
+}
 
 .advantages-with-number {
   padding-top: 98px;
@@ -467,6 +487,8 @@ display: block;
 
 .search-results-sorting {
   display: flex;
+  align-items: center;
+  height: 38px;
   margin-left: 72px;
   margin-bottom: 53px;
 }
