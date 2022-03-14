@@ -731,16 +731,16 @@ outline: 3px solid #83B3D3;
   fill: #83B3D3;
 }
 
- .footer-social-item:hover {
+.footer-icon:hover {
    fill: #68A2CA;
   }
 
-  .footer-social-item:focus {
+.footer-social-item:focus {
     fill: #68A2CA;
     outline: 3px solid #68A2CA;
    }
 
-  .footer-social-item:active {
+.footer-social-item:active {
    fill:#68A2CA;
    opacity: 30%;
    outline: none;
@@ -775,7 +775,7 @@ outline: 3px solid #83B3D3;
   fill: #000000;
 }
 
-.footer-logo:hover {
+ .html-logo:hover {
   fill: #756257;
  }
 
