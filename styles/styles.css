@@ -774,19 +774,28 @@ outline: 3px solid #83B3D3;
   fill: #000000;
 }
 
- .html-logo:hover {
+ .footer-logo:hover .html-logo {
   fill: #756257;
  }
 
+
  .footer-logo:focus {
+  box-shadow: inset 0 0 0 3px #68A2CA;
+  outline: none;
+}
+
+ .footer-logo:focus .html-logo {
    fill: #756257;
-   outline: 3px solid #68A2CA;
   }
 
- .footer-logo:active {
+  .footer-logo:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+ .footer-logo:active .html-logo {
   fill:#756257;
   opacity: 30%;
-  outline: none;
  }
 
 .visually-hidden {
