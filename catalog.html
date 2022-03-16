@@ -123,22 +123,25 @@
 
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="hotels-type" value="hotel" checked>
-                    Гостиница
+                    <input class="control-input visually-hidden" type="radio" name="hotels-type" value="hotel" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Гостиница</span>
                   </label>
                 </li>
 
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="hotels-type" value="motel">
-                    Мотель
+                    <input class="control-input visually-hidden" type="radio" name="hotels-type" value="motel">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Мотель</span>
                   </label>
                 </li>
 
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="hotels-type" value="apart-hotel">
-                    Апартаменты
+                    <input class="control-input visually-hidden" type="radio" name="hotels-type" value="apart-hotel">
+                    <span class="control-mark"></span>
+                    <span class="control-label">Апартаменты</span>
                   </label>
                 </li>
               </ul>
@@ -181,15 +184,15 @@
 
       <section class="search-results-sorting">
         <div class="search-results">
-          <h2 class="search-results-title">Найдено гостиниц: <span>38</span></h2>
+          <h2 class="search-results-title">Найдено гостиниц: 38</h2>
         </div>
-        <!--div class="select sorting-type"-->
+
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
           <option value="popular">Сначала популярные</option>
         </select>
-        <!--/div-->
+
         <div class="sorting-button">
           <a class="button-light button-light-selected" href="#">
             <svg aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg">
@@ -353,15 +356,16 @@
             </li>
           </ul>
         </div>
-        <div class="show-more">
+        <div class="show-hotels-on-page">
           <p class="hotels-on-page">Гостиниц на странице:</p>
-          <select class="select-hotels-on-page">
-            <option value="value-1">1</option>
-            <option value="value-2">2</option>
-            <option value="value-3">3</option>
-            <option value="value-4">4</option>
-          </select>
         </div>
+        <select class="select-hotels-on-page select-control">
+          <option value="value-1">1</option>
+          <option value="value-2">2</option>
+          <option value="value-3">3</option>
+          <option value="value-4">4</option>
+        </select>
+
       </section>
 
     </main>
