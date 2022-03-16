@@ -288,7 +288,6 @@ body {
 .advantages-img {
   display: block;
   object-fit: contain;
-  max-width: 100%;
 }
 
 /* search hotel */
@@ -309,6 +308,7 @@ body {
 
 
 /* newsletter  */
+
 .newsletter {
   text-align: center;
 }
@@ -336,7 +336,48 @@ body {
   padding-bottom: 46px;
 }
 
+.newsletter-email {
+  flex-grow: 1;
+  margin: 0;
+}
+
+.newsletter-form {
+  display: flex;
+}
+
+.newsletter-field {
+  margin: 0;
+  padding: 19px 22px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 400;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  width: 600px;
+  outline: none;
+}
+
+.newsletter-field:hover {
+  background-color: #E6E6E6;
+  outline: none;
+}
+
+.newsletter-field:focus {
+  outline: 3px solid #83B3D3;
+  outline-offset: -3px;
+}
+
+.newsletter-field:focus:invalid {
+  background-color: #ffffff;
+  outline: 2px solid #FF5757;
+  outline-offset: -2px;
+}
+
 /* catalog */
+
 .catalog-filter {
   box-sizing: border-box;
   color: #FFFFFF;
@@ -387,6 +428,103 @@ body {
 .filter-button:first-of-type .button {
   margin-bottom: 20px;
 }
+
+.filter-price-choice {
+  margin-right: 81px;
+  padding: 0;
+}
+
+.filter-price {
+  display: flex;
+  justify-content: center;
+}
+
+.range-input {
+  width: 143px;
+  box-sizing: border-box;
+  padding-top: 14px;
+  padding-bottom: 11px;
+  padding-left: 18px;
+  font-family: inherit;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: start;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 0 4px 4px 0;
+  /*appearance: textfield;*/
+}
+
+.catalog-filter-label:first-of-type .range-input {
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.range-input:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.range-input:focus {
+  outline: 4px solid #83B3D3;
+  border: 2px solid #FFFFFF;
+}
+
+.range-input:active {
+  outline: none;
+  border: 2px solid #FFFFFF;
+  background-color: #756257;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-scale {
+  position: relative;
+  width: 287px;
+  height: 4px;
+  left: 3px;
+  right: -3px;
+  margin-top: 32px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  width: 236px;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  /*cursor: pointer;*/
+}
+
+.toggle-min {
+  top: -8px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: 0px;
+}
+
+.range-toggle:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.range-toggle:active {
+  outline: 2px solid #83B3D3;
+}
+
 
 .inner-header-title {
   margin: 0;
@@ -481,6 +619,7 @@ body {
   line-height: 26px;
   font-weight: 700;
   margin-bottom: 30px;
+  padding: 0;
 }
 
 .catalog-filter-item {
@@ -552,6 +691,51 @@ display: block;
   border: none;
 }
 
+
+/*checkbox and radio-button*/
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 39px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 12px;
+  height: 10px;
+  background-image: url(../images/tick.svg);
+  content: "";
+}
+
+
+
+.control-input:hover + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-input:focus + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83B3D3;
+}
+
+.control-input:active + .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
 /* hotels */
 
 .hotel-list {
@@ -597,7 +781,6 @@ display: block;
 .hotel-card-image {
   display: block;
   object-fit: contain;
-  max-width: 100%;
 }
 
 .hotel-card-link:hover {
@@ -723,6 +906,7 @@ display: block;
  .pagination-link:focus {
    background-color: #68A2CA;
    outline: 3px solid #756257;
+   outline-offset: -3px;
   }
 
   .pagination-link:active {
