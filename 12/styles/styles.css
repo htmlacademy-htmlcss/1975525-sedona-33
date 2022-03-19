@@ -172,8 +172,7 @@ body {
 .page-index-logo {
     display: block;
     margin: 0 auto;
-    margin-top: 16px;
-    margin-bottom: 129px;
+    margin-bottom: 145px;
 }
 
 .promo {
@@ -565,6 +564,7 @@ body {
     height: 411px;
     padding-left: 200px;
     padding-right: 200px;
+    margin-bottom: 20px;
 }
 
 .breadcrumbs {
@@ -577,6 +577,25 @@ body {
     font-size: 16px;
     line-height: 21px;
     color: #FFFFFF;
+}
+
+.breadcrumbs-item {
+  position: relative;
+}
+
+.breadcrumbs-item::after {
+  position: absolute;
+  bottom: 2px;
+  left: 25px;
+  background-image: url(../images/arrow.svg);
+  background-repeat: no-repeat;
+  height: 8px;
+  width: 5px;
+  content: "";
+}
+
+.breadcrumbs-item:last-child::after {
+  display: none;
 }
 
 .breadcrumbs-link {
@@ -595,7 +614,7 @@ body {
     box-sizing: border-box;
     width: 12px;
     height: 12px;
-    margin-right: 11px;
+    margin-right: 24px;
     padding: 2px 5px 2px 5px;
     border-radius: 4px;
 }
@@ -1119,7 +1138,7 @@ body {
     justify-content: space-between;
     margin: 0 auto;
     flex-direction: row;
-    padding: 40px 0;
+    padding: 0;
     align-items: center;
     margin-right: 43px;
     margin-left: 43px;
@@ -1414,7 +1433,7 @@ body {
     background-color: #83B3D3;
     border: none;
     border-radius: 0 10px 10px 0;
-    padding: 17px 24px 17px 43px;
+    padding: 18px 30px 17px 30px;
 }
 
 .newsletter-button:hover,
