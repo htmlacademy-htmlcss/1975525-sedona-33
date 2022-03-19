@@ -1228,7 +1228,7 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
-    /*width: 720px;*/
+
 }
 
 .footer-logo {
@@ -1287,17 +1287,6 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
-
-/*.page-footer-container-inner {
-    width: 1200px;
-
-}*/
-
-
-/*.page-footer-container-inner .footer-social {
-    margin-left: 72px;
-}*/
 
 
 /* Buttons */
