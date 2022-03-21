@@ -192,8 +192,9 @@ body {
 
 .advantages {
     display: flex;
-    justify-content: space-between;
-    max-height: 384px;
+    flex-wrap: wrap;
+    justify-content: left;
+    max-width: 1200px;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -245,7 +246,7 @@ body {
 }
 
 .advantages-item {
-    min-width: 400px;
+    max-width: 400px;
     min-height: 384px;
     box-sizing: border-box;
     margin: 0;
@@ -263,7 +264,8 @@ body {
 
 .item-without-img {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: left;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -422,11 +424,12 @@ body {
     background-repeat: no-repeat;
     min-height: 408px;
     padding-left: 71px;
-    margin-bottom: 43px;
+    margin-bottom: 39px;
 }
 
 .catalog-filter-form {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .catalog-filter-list {
@@ -437,6 +440,7 @@ body {
 .catalog-filter-group {
     margin: 0;
     padding: 0;
+    margin-bottom: 15px;
 }
 
 .filter-infrastructure {
@@ -446,12 +450,9 @@ body {
 
 .filter-house {
     width: 207px;
-    margin-right: 105px;
+    margin-right: 100px;
 }
 
-.filter-price-choice {
-    width: 297px;
-}
 
 .filter-button {
     display: flex;
@@ -462,7 +463,8 @@ body {
 }
 
 .filter-price-choice {
-    margin-right: 81px;
+    width: 297px;
+    margin-right: 73px;
     padding: 0;
 }
 
@@ -747,7 +749,9 @@ body {
 }
 
 .sorting-button {
+    min-width: 184px;
     display: flex;
+    flex-wrap: wrap;
     margin-left: auto;
 }
 
@@ -760,10 +764,21 @@ body {
     height: 48px;
     border-radius: 4px;
     outline: 2px solid #E5E5E5;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: none;
 }
 
 .button-light-selected {
+    background-color: #ffffff;
+    border: none;
     outline: 2px solid #000000;
+    box-shadow: none;
+}
+
+.button-light {
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .button-light:not(:last-child) {
@@ -780,10 +795,10 @@ body {
 }
 
 .select-control {
-    width: 100%;
+    min-width: 287px;
     padding: 11px 19px;
-    padding-right: 127px;
-    margin-right: 81px;
+    padding-right: 125px;
+    margin-right: 80px;
     font: inherit;
     font-weight: 400;
     font-size: 18px;
@@ -798,9 +813,11 @@ body {
 }
 
 .select-hotels-on-page {
+    min-width: 155px;
+    max-width: 160px;
     line-height: 23px;
     margin: 0px;
-    padding: 13px 133px 12px 17px;
+    padding: 13px 131px 12px 17px;
 }
 
 .select-control:hover,
@@ -899,7 +916,7 @@ body {
     align-items: center;
     margin-left: 72px;
     margin-right: 72px;
-    margin-bottom: 53px;
+    margin-bottom: 50px;
 }
 
 .search-results {
@@ -1025,6 +1042,8 @@ body {
 
 .pagination-container {
     display: flex;
+    flex-wrap: wrap;
+    max-width: 570px;
     padding: 0;
     margin-right: 299px;
 }
@@ -1603,6 +1622,7 @@ body {
 
 .message {
     position: absolute;
+    max-width: 470px;
     margin: 0;
     font-family: inherit;
     font-size: 16px;
@@ -1697,6 +1717,7 @@ body {
 }
 
 .form-label {
+    display: inline-block;
     font-size: 18px;
     line-height: 40px;
     font-weight: 700;
