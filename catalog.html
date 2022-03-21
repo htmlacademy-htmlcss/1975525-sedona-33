@@ -25,7 +25,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
           </li>
         </ul>
 
@@ -61,7 +61,7 @@
     <main class="main-container main-inner">
       <!--Блок с фильтрами-->
       <div class="catalog-filter">
-        <h2 class="visually-hidden">Фильтры вариантов размещения:</h2>
+
         <div class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -81,8 +81,9 @@
             </li>
           </ul>
         </div>
-
         <section class="catalog-hotels">
+          <h2 class="visually-hidden">Фильтры вариантов размещения:</h2>
+
           <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group filter-infrastructure">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -192,26 +193,26 @@
         </select>
 
         <div class="sorting-button">
-          <a class="button-light button-light-selected" href="#">
+          <button class="button-light button-light-selected" type="button">
             <svg aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z" />
             </svg>
             <span class="visually-hidden">Показать мелкие карточки</span>
-          </a>
-          <a class="button-light" href="#">
+          </button>
+          <button class="button-light" type="button">
             <svg aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" />
             </svg>
             <span class="visually-hidden">Показать крупные карточки</span>
-          </a>
-          <a class="button-light" href="#">
+          </button>
+          <button class="button-light" type="button">
             <svg aria-hidden="true" focusable="false" width="16" height="14" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z" />
             </svg>
             <span class="visually-hidden">Показать список</span>
-          </a>
+          </button>
         </div>
       </section>
 
@@ -234,7 +235,7 @@
             </div>
             <div class="catalog-buttons">
               <a class="button small-button button-orange" href="#">подробнее</a>
-              <button class="button small-button button-blue" type="submit">В избранное</button>
+              <button class="button small-button button-blue" type="button">В избранное</button>
             </div>
             <div class="catalog-rating">
               <div class="hotel-rating-stars">
@@ -265,7 +266,7 @@
             </div>
             <div class="catalog-buttons">
               <a class="button small-button button-orange" href="#">подробнее</a>
-              <button class="button small-button button-blue" type="submit">В избранное</button>
+              <button class="button small-button button-blue" type="button">В избранное</button>
             </div>
             <div class="catalog-rating">
               <div class="hotel-rating-stars">
@@ -292,7 +293,7 @@
             </div>
             <div class="catalog-buttons">
               <a class="button small-button button-orange" href="#">подробнее</a>
-              <button class="button small-button small-button-added" type="submit">В избранном</button>
+              <button class="button small-button small-button-added" type="button">В избранном</button>
             </div>
             <div class="catalog-rating">
               <div class="hotel-rating-stars">
@@ -319,7 +320,7 @@
             </div>
             <div class="catalog-buttons">
               <a class="button small-button button-orange" href="#">подробнее</a>
-              <button class="button small-button button-blue" type="submit">В избранное</button>
+              <button class="button small-button button-blue" type="button">В избранное</button>
             </div>
             <div class="catalog-rating">
               <div class="hotel-rating-stars">
@@ -337,7 +338,7 @@
         <button class="button button-blue large-button" type="button">Загрузить ещё</button>
       </div>
 
-      <section class="pagination">
+      <div class="pagination">
         <div class="pagination-container">
           <ul class="pagination-list">
             <li class="pagination-item">
@@ -372,7 +373,7 @@
           <option value="value-4">4</option>
         </select>
 
-      </section>
+      </div>
 
     </main>
     <!--Подписка на рассылку-->

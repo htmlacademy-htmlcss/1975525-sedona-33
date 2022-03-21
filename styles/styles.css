@@ -506,6 +506,10 @@ body {
     background-color: #756257;
 }
 
+.range-input[type='number'] {
+  -moz-appearance:textfield;
+}
+
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
     appearance: none;
@@ -948,7 +952,6 @@ body {
 .catalog-content {
     display: flex;
     flex-direction: column;
-    margin-top: auto;
 }
 
 .catalog-price {
@@ -1675,6 +1678,10 @@ body {
     text-align: center;
 }
 
+.field-number[type='number'] {
+  -moz-appearance:textfield;
+}
+
 .field-number::-webkit-outer-spin-button,
 .field-number::-webkit-inner-spin-button {
     appearance: none;
@@ -1682,6 +1689,7 @@ body {
 }
 
 .field-date {
+    position: relative;
     background-image: url(../images/date.svg);
     background-repeat: no-repeat;
     background-position: right 19px center;
@@ -1696,7 +1704,7 @@ body {
 
 .form-label-icon {
     position: relative;
-    padding-right: 25px;
+    /*padding-right: 0px;*/
 }
 
 .plus-button,
@@ -1788,7 +1796,7 @@ body {
     height: 25px;
     padding: 0;
     margin: 0;
-    margin-left: 11px;
+    margin-left: 5px;
     display: block;
     box-sizing: border-box;
     font-family: "PT Sans", sans-serif;
