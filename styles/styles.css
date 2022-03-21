@@ -1689,6 +1689,7 @@ body {
 }
 
 .field-date {
+    position: relative;
     background-image: url(../images/date.svg);
     background-repeat: no-repeat;
     background-position: right 19px center;
