@@ -795,9 +795,10 @@ body {
 }
 
 .select-control {
-    min-width: 287px;
+    box-sizing: border-box;
+    width: 287px;
     padding: 11px 19px;
-    padding-right: 125px;
+    padding-right: 14px;
     margin-right: 80px;
     font: inherit;
     font-weight: 400;
@@ -813,8 +814,8 @@ body {
 }
 
 .select-hotels-on-page {
-    min-width: 155px;
-    max-width: 160px;
+    box-sizing: border-box;
+    width: 160px;
     line-height: 23px;
     margin: 0px;
     padding: 13px 131px 12px 17px;
@@ -1007,10 +1008,17 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 16px;
+    gap: 10px;
+    align-items: center;
 }
 
+.catalog-buttons .button-orange {
+    max-width: 133px;
+}
+
+
 .button-favorits {
-    width: 142px;
+    max-width: 142px;
 }
 
 .hotel-rating-stars {
@@ -1236,9 +1244,6 @@ body {
     display: block;
     width: 40px;
     height: 40px;
-}
-
-.button-social:not(last-child) {
     margin-right: 5px;
 }
 
@@ -1617,23 +1622,23 @@ body {
 .search-form {
     display: grid;
     grid-template-columns: 288px 230px;
-    grid-gap: 40px 56px;
+    grid-column-gap: 56px;
 }
 
 .message {
-    position: absolute;
+    grid-column: 1 / -1;
+    display: block;
     max-width: 470px;
     margin: 0;
+    margin-left: 155px;
+    margin-bottom: 11px;
     font-family: inherit;
     font-size: 16px;
     line-height: 29px;
-    left: 225px;
-    top: 292px;
 }
 
 .message-error {
     color: #FF5757;
-    top: 203px;
 }
 
 .form-check-in {
@@ -1646,6 +1651,7 @@ body {
 
 .search-form-submit {
     grid-column: 1 / -1;
+    margin-top: 40px;
 }
 
 .field-group {
@@ -1709,7 +1715,7 @@ body {
 }
 
 .field-date {
-    position: relative;
+    position:relative;
     background-image: url(../images/date.svg);
     background-repeat: no-repeat;
     background-position: right 19px center;
@@ -1772,7 +1778,7 @@ body {
 
 .minus {
     position: absolute;
-    top: 0;
+    top: 1px;
     right: 0;
     bottom: 0;
     left: 0;
